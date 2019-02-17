@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futura PT Demi";
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 100;
+  background-color: black;
+  color: #eee;
+  width: 100%;
+  height: 100%;
+}
+
+main .heading {
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+main .heading span {
+  width: 3.6vw;
+  padding-right: 0.5vw;
+  display: inline-block;
+}
+
+main .afisha {
+  position: relative;
+  top: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.afisha .event-1, .event-2, .event-3, .event-4, .event-5 {
+  margin-top: 2vw;
+}
+
+.afisha h2 {
+  font-family: "Futura PT Demi";
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  margin-left: 2vw;
+  letter-spacing: 0.1vw;
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.afisha hr {
+  float: left;
+  margin-left: 2vw;
+  width: 80vw;
+  height: 0.1vw;
+  border: none;
+  color: black;
+  background-color: black;
+
+}
+
+/*
+body {
+  font-size: 1vw;
+}
+
+.heading {
+  background-color: black;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Futura PT Demi";
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20%;
+}
+
+p {
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+} */
