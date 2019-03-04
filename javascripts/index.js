@@ -76,7 +76,17 @@ $(document).ready(function(){
   $(".event-3").mouseenter (function() {
     $(".name-3").css({
       "color": "black",
-      "transition": "0.2s"
+      "transition": "0.2s",
+    })
+    $(".afisha").css({
+      "background-image": "url(images/orpheus2.png)",
+      "background-size": "40%",
+      "background-position": "90% 48%",
+      "background-repeat": "no-repeat",
+      "-webkit-transition": "all" + "1s",
+      "-moz-transition": "all" + "1s",
+      "-o-transition": "all" + "1s",
+      "transition": "all" + "1s"
     })
   })
 
@@ -85,12 +95,32 @@ $(document).ready(function(){
       "color": "black",
       "transition": "0.2s"
     })
+    $(".afisha").css({
+      "background-image": "url(images/orpheus2.png)",
+      "background-size": "40%",
+      "background-position": "95% 70%",
+      "background-repeat": "no-repeat",
+      "-webkit-transition": "all" + "1s",
+      "-moz-transition": "all" + "1s",
+      "-o-transition": "all" + "1s",
+      "transition": "all" + "1s"
+    })
   })
 
   $(".event-5").mouseenter (function() {
     $(".name-5").css({
       "color": "black",
       "transition": "0.2s"
+    })
+    $(".afisha").css({
+      "background-image": "url(images/orpheus2.png)",
+      "background-size": "40%",
+      "background-position": "98% 98%",
+      "background-repeat": "no-repeat",
+      "-webkit-transition": "all" + "1s",
+      "-moz-transition": "all" + "1s",
+      "-o-transition": "all" + "1s",
+      "transition": "all" + "1s"
     })
   })
 
@@ -121,6 +151,10 @@ $(document).ready(function(){
       "color": "transparent",
       "transition": "0.2s"
     })
+    $(".afisha").css({
+      "background-image": "none",
+      "transition": "1s"
+    })
   })
 
   $(".event-4").mouseleave (function() {
@@ -128,12 +162,20 @@ $(document).ready(function(){
       "color": "transparent",
       "transition": "0.2s"
     })
+    $(".afisha").css({
+      "background-image": "none",
+      "transition": "1s"
+    })
   })
 
   $(".event-5").mouseleave (function() {
     $(".name-5").css({
       "color": "transparent",
       "transition": "0.2s"
+    })
+    $(".afisha").css({
+      "background-image": "none",
+      "transition": "1s"
     })
   })
 });
