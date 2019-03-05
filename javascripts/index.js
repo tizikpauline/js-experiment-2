@@ -42,7 +42,7 @@ $(document).ready(function(){
   $(".event-1").mouseenter (function() {
     $(".name-1").css({
       "color": "black",
-      "transition": "0.2s"
+      "transition": "0.4s"
     })
     $(".afisha").css({
       "background-image": "url(images/dido_1.png)",
@@ -54,12 +54,15 @@ $(document).ready(function(){
       "-o-transition": "all" + "1s",
       "transition": "all" + "1s"
     })
+    $(".text-1 p").css({
+      "color": "red"
+    })
   })
 
   $(".event-2").mouseenter (function() {
     $(".name-2").css({
       "color": "black",
-      "transition": "0.2s"
+      "transition": "0.4s"
     })
     $(".afisha").css({
       "background-image": "url(images/orpheus2.png)",
@@ -71,6 +74,9 @@ $(document).ready(function(){
       "-o-transition": "all" + "1s",
       "transition": "all" + "1s"
     })
+    $(".text-2 p").css({
+      "color": "red"
+    })
   })
 
   $(".event-3").mouseenter (function() {
@@ -79,7 +85,7 @@ $(document).ready(function(){
       "transition": "0.2s",
     })
     $(".afisha").css({
-      "background-image": "url(images/orpheus2.png)",
+      "background-image": "url(images/.orpheus2.png)",
       "background-size": "40%",
       "background-position": "90% 48%",
       "background-repeat": "no-repeat",
@@ -87,6 +93,9 @@ $(document).ready(function(){
       "-moz-transition": "all" + "1s",
       "-o-transition": "all" + "1s",
       "transition": "all" + "1s"
+    })
+    $(".text-3 p").css({
+      "color": "red"
     })
   })
 
@@ -105,6 +114,9 @@ $(document).ready(function(){
       "-o-transition": "all" + "1s",
       "transition": "all" + "1s"
     })
+    $(".text-4 p").css({
+      "color": "red"
+    })
   })
 
   $(".event-5").mouseenter (function() {
@@ -122,6 +134,9 @@ $(document).ready(function(){
       "-o-transition": "all" + "1s",
       "transition": "all" + "1s"
     })
+    $(".text-5 p").css({
+      "color": "red"
+    })
   })
 
   $(".event-1").mouseleave (function() {
@@ -132,6 +147,9 @@ $(document).ready(function(){
     $(".afisha").css({
       "background-image": "none",
       "transition": "1s"
+    })
+    $(".text-1 p").css({
+      "color": "white"
     })
   })
 
@@ -144,6 +162,9 @@ $(document).ready(function(){
       "background-image": "none",
       "transition": "1s"
     })
+    $(".text-2 p").css({
+      "color": "white"
+    })
   })
 
   $(".event-3").mouseleave (function() {
@@ -154,6 +175,9 @@ $(document).ready(function(){
     $(".afisha").css({
       "background-image": "none",
       "transition": "1s"
+    })
+    $(".text-3 p").css({
+      "color": "white"
     })
   })
 
@@ -166,6 +190,9 @@ $(document).ready(function(){
       "background-image": "none",
       "transition": "1s"
     })
+    $(".text-4 p").css({
+      "color": "white"
+    })
   })
 
   $(".event-5").mouseleave (function() {
@@ -176,6 +203,9 @@ $(document).ready(function(){
     $(".afisha").css({
       "background-image": "none",
       "transition": "1s"
+    })
+    $(".text-5 p").css({
+      "color": "white"
     })
   })
 });
