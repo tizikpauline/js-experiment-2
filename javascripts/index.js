@@ -143,7 +143,7 @@ $(document).ready(function(){
       "transition": "0.2s"
     })
     $(".afisha").css({
-      "background-image": "url(images/orpheus2.png)",
+      "background-image": "url(images/kastor_polluks.png)",
       "background-size": "40%",
       "background-position": "95% 70%",
       "background-repeat": "no-repeat",
