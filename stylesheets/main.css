@@ -33,7 +33,7 @@ main .afisha {
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding-top: 5vw;
+  padding-top: 8vw;
   padding-bottom: 5vw;
 }
 
@@ -49,8 +49,8 @@ main .afisha {
 
 .afisha h2 {
   font-family: "Futura PT Demi";
-  margin-top: 3vw;
-  margin-bottom: 2vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
   margin-left: 1vw;
   margin-right: 20vw;
   letter-spacing: 0.1vw;
@@ -74,8 +74,54 @@ main .afisha {
   font-family: "Futura PT Light";
   font-size: 1.5rem;
   color: white;
-  margin-top: 3vw;
+  margin-top: 5vw;
   transform: rotate(-90deg);
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.animation-container span {
+  color: whitesmoke;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
 }
 
 /*
