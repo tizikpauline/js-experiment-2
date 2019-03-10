@@ -164,7 +164,7 @@ $(document).ready(function(){
       "transition": "0.2s"
     })
     $(".afisha").css({
-      "background-image": "url(images/orpheus2.png)",
+      "background-image": "url(images/idomeneus.png)",
       "background-size": "40%",
       "background-position": "98% 98%",
       "background-repeat": "no-repeat",
