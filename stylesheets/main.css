@@ -124,27 +124,24 @@ main .afisha {
   }
 }
 
-/*
-body {
-  font-size: 1vw;
-}
+@media (min-width: 768px) {
+  main .heading {
+    font-size: 6.5rem;
+  }
 
-.heading {
-  background-color: black;
-  height: 100vh;
-}
+  main .heading span {
+    width: 4vw;
+    padding-right: 0.8vw;
+    display: inline-block;
+  }
 
-h1 {
-  font-family: "Futura PT Demi";
-  font-size: 5rem;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 20%;
-}
+  .afisha h2 {
+    letter-spacing: 0.2vw;
+    font-size: 6rem;
+  }
 
-p {
-  color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-} */
+  .afisha p {
+    font-size: 2rem;
+    margin-top: 4.5vw;
+  }
+}
