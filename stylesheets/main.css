@@ -123,25 +123,3 @@ main .afisha {
     transform: none;
   }
 }
-
-@media (min-width: 768px) {
-  main .heading {
-    font-size: 6.5rem;
-  }
-
-  main .heading span {
-    width: 4vw;
-    padding-right: 0.8vw;
-    display: inline-block;
-  }
-
-  .afisha h2 {
-    letter-spacing: 0.2vw;
-    font-size: 6rem;
-  }
-
-  .afisha p {
-    font-size: 2rem;
-    margin-top: 4.5vw;
-  }
-}
