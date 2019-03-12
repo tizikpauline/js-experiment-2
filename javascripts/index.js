@@ -80,7 +80,7 @@ $(document).ready(function(){
       "transition": "0.4s"
     })
     $(".afisha").css({
-      "background-image": "url(images/dido_1.png)",
+      "background-image": "url(images/dido.png)",
       "background-size": "40%",
       "background-position": "95% 3%",
       "background-repeat": "no-repeat",
@@ -101,7 +101,7 @@ $(document).ready(function(){
       "transition": "0.4s"
     })
     $(".afisha").css({
-      "background-image": "url(images/orpheus2.png)",
+      "background-image": "url(images/orpheus.png)",
       "background-size": "40%",
       "background-position": "95% 28%",
       "background-repeat": "no-repeat",

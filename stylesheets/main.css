@@ -123,3 +123,9 @@ main .afisha {
     transform: none;
   }
 }
+
+.images-downloader {
+  margin-left: 500vw;
+  overflow: hidden;
+  position: absolute;
+}
