@@ -93,6 +93,12 @@ $(document).ready(function(){
       "color": "red",
       "transition": "0.2s"
     })
+    $(".event-1 button").css({
+      "display": "block",
+      "float": "right",
+      "margin-right": "79vw",
+      "margin-top": "-3vw"
+    })
   })
 
   $(".event-2").mouseenter (function() {
@@ -113,6 +119,12 @@ $(document).ready(function(){
     $(".text-2 p").css({
       "color": "red",
       "transition": "0.2s"
+    })
+    $(".event-2 button").css({
+      "display": "block",
+      "float": "right",
+      "margin-right": "79vw",
+      "margin-top": "-3vw"
     })
   })
 
@@ -135,6 +147,12 @@ $(document).ready(function(){
       "color": "red",
       "transition": "0.2s"
     })
+    $(".event-3 button").css({
+      "display": "block",
+      "float": "right",
+      "margin-right": "79vw",
+      "margin-top": "-3vw"
+    })
   })
 
   $(".event-4").mouseenter (function() {
@@ -156,6 +174,12 @@ $(document).ready(function(){
       "color": "red",
       "transition": "0.2s"
     })
+    $(".event-4 button").css({
+      "display": "block",
+      "float": "right",
+      "margin-right": "79vw",
+      "margin-top": "-3vw"
+    })
   })
 
   $(".event-5").mouseenter (function() {
@@ -166,7 +190,7 @@ $(document).ready(function(){
     $(".afisha").css({
       "background-image": "url(images/idomeneus.png)",
       "background-size": "40%",
-      "background-position": "95% 98%",
+      "background-position": "95% 95%",
       "background-repeat": "no-repeat",
       "-webkit-transition": "all" + "1s",
       "-moz-transition": "all" + "1s",
@@ -176,6 +200,12 @@ $(document).ready(function(){
     $(".text-5 p").css({
       "color": "red",
       "transition": "0.2s"
+    })
+    $(".event-5 button").css({
+      "display": "block",
+      "float": "right",
+      "margin-right": "79vw",
+      "margin-top": "-3vw"
     })
   })
 
@@ -192,6 +222,9 @@ $(document).ready(function(){
       "color": "white",
       "transition": "0.2s"
     })
+    $(".event-1 button").css({
+      "display": "none"
+    })
   })
 
   $(".event-2").mouseleave (function() {
@@ -206,6 +239,9 @@ $(document).ready(function(){
     $(".text-2 p").css({
       "color": "white",
       "transition": "0.2s"
+    })
+    $(".event-2 button").css({
+      "display": "none"
     })
   })
 
@@ -222,6 +258,9 @@ $(document).ready(function(){
       "color": "white",
       "transition": "0.2s"
     })
+    $(".event-3 button").css({
+      "display": "none"
+    })
   })
 
   $(".event-4").mouseleave (function() {
@@ -237,6 +276,9 @@ $(document).ready(function(){
       "color": "white",
       "transition": "0.2s"
     })
+    $(".event-4 button").css({
+      "display": "none"
+    })
   })
 
   $(".event-5").mouseleave (function() {
@@ -251,6 +293,9 @@ $(document).ready(function(){
     $(".text-5 p").css({
       "color": "white",
       "transition": "0.2s"
+    })
+    $(".event-5 button").css({
+      "display": "none"
     })
   })
 });

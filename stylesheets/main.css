@@ -44,6 +44,7 @@ main .afisha {
 
 .afisha .event-1, .event-2, .event-3, .event-4, .event-5 {
   margin-top: 2vw;
+  height: 18vw;
 }
 
 .text-1, .text-2, .text-3, .text-4, .text-5 {
@@ -55,7 +56,7 @@ main .afisha {
 .afisha h2 {
   font-family: "Futura PT Demi";
   margin-top: 5vw;
-  margin-bottom: 3vw;
+  margin-bottom: 6vw;
   margin-left: 1vw;
   margin-right: 20vw;
   letter-spacing: 0.1vw;
@@ -67,6 +68,7 @@ main .afisha {
 
 .afisha hr {
   float: left;
+  margin-top: 2vw;
   margin-left: 2vw;
   width: 80vw;
   height: 1px;
@@ -133,4 +135,38 @@ main .afisha {
   margin-left: 500vw;
   overflow: hidden;
   position: absolute;
+  display: none;
+}
+
+footer {
+  display: block;
+  height: 200vw;
+  background-color: white;
+}
+
+.afisha button {
+  display: none;
+  width: 12vw;
+  height: 3vw;
+
+  font-family: "FuturaLightC";
+  line-height: 1;
+  font-size: 2rem;
+  color: red;
+
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 7px;
+  border-color: red;
+}
+
+.adress p {
+  font-family: "FuturaBookC";
+  line-height: 1;
+  font-size: 2rem;
+  text-align: left;
+  float: left;
+  margin-left: 3vw;
+  color: black;
 }
