@@ -585,6 +585,10 @@ footer {
 }
 
 @media (max-width: 425px) {
+  .distort__img {
+    width: 90%;
+  }
+
   .content {
     height: 80vh;
   }
@@ -617,6 +621,10 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .distort__img {
+    width: 90%;
+  }
+  
   footer {
     align-items: center;
     height: 20vw;
