@@ -32,7 +32,27 @@
         <img src="images/kastor_polluks.png">
         <img src="images/orpheus.png">
       </section>
-      <section class="afisha">
+      <div class="content">
+        <svg class="distort" width="420" height="450" viewBox="0 0 420 450">
+          <filter id="distortionFilter">
+            <feTurbulence type="turbulence" baseFrequency="0.07 0.01" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+          </filter>
+          <g filter="url(#distortionFilter)">
+            <image class="distort__img" x="50" y="50" xlink:href="images/dido.svg"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/idomeneus.png"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/ariadna.png"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/orpheus.png"/>
+          </g>
+        </svg>
+        <nav class="menu">
+          <a href="#" class="menu__link">Дидона и Эней</a>
+          <a href="#" class="menu__link">Идоменей</a>
+          <a href="#" class="menu__link">Ариадна</a>
+          <a href="#" class="menu__link">Орфей и Эвридика</a>
+        </nav>
+      </div>
+      <!-- <section class="afisha">
         <div class="event-1">
           <div class="text-1">
             <p>7-12 марта</p>
@@ -72,17 +92,21 @@
           </div>
           <button type="button" name="button">Купить билет</button>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer>
       <div class="adress">
-        <p>ул. Тверская, 5</p>
+        <img src="images/placeholder_w.svg" alt="placeholder">
+        <a target="_blank" href="https://goo.gl/maps/HhCMQb43vwB2">Москва, ул. Тверская, 5</a>
       </div>
       <div class="social-icons">
-        <img src="images/instagram.svg" alt="instagram">
-        <img src="images/facebook.svg" alt="facebook">
-        <img src="images/vk.svg" alt="vk">
+        <a target="_blank" href="https://vk.com/polinatzk"><img src="images/icon-vk.svg" alt="vk"></a>
+        <a target="_blank" href="https://www.instagram.com/polinatzk/"><img src="images/icon-instagram.svg" alt="instagram"></a>
+        <a target="_blank" href="https://www.facebook.com/polinatzk"><img src="images/icon-facebook.svg" alt="facebook"></a>
       </div>
     </footer>
+    <script src="javascripts/charming.min.js"></script>
+    <script src="javascripts/TweenMax.min.js"></script>
+    <script src="javascripts/main.js"></script>
   </body>
 </html>
