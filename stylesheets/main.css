@@ -745,19 +745,104 @@ footer {
   text-transform: none;
 }
 
-.where {
+.tickets {
   position: relative;
   background-color: black;
   height: 90vh;
 }
 
-.where h2 {
-  font-family: "DIN Condensed";
+.ticket {
+  display: grid;
+  justify-self: center;
+  margin: 15vw auto 15vw;
+  border: 0.1vw solid #FFFFFF;
+  grid-gap: 1px;
+  grid-template-rows: 7vw 16vw;
+  grid-template-columns: 58vw 7vw;
+  width: 65vw;
+  cursor: pointer;
+}
+
+.ticket-top {
+  text-align: center;
+  width: 58vw;
+  border-bottom: 0.1vw solid #FFFFFF;
+  border-right: 0.1vw solid #FFFFFF;
+}
+
+.grid-item {
+  width: 12.4vw;
+}
+
+.ticket-bottom {
+  border-right: 0.1vw solid #FFFFFF;
+  width: 58vw;
+}
+
+.ticket-left {
+  width: 58vw;
+}
+
+.ticket-get {
+  border-bottom: 0.1vw solid #FFFFFF;
+  height: 7vw;
+}
+
+.ticket-location {
+  height: 3vw;
+  border-bottom: 0.1vw solid #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.ticket h3 {
+  font-family:'Russo One', sans-serif;
   text-transform: uppercase;
-  font-size: 8rem;
-  margin-bottom: 5vw;
-  margin-left: 11vw;
-  padding-top: 2vw;
+  font-size: 3rem;
+  margin: 2vw auto 2vw;
+}
+
+.tickets h2 {
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+.ticket p {
+  font-family: 'Anonymous Pro', monospace;
+  text-transform: none;
+  font-size: 2rem;
+}
+
+.ticket-adress {
+  border-right: 0.1vw solid #FFFFFF;
+  width:29vw;
+  height: 3vw;
+  margin-left: 1vw;
+}
+
+.ticket-adress p, .ticket-metro p, .ticket-time p {
+  margin-top: 0.5vw;
+}
+
+
+.ticket-metro {
+  margin-left: 1vw;
+}
+
+.ticket-right {
+  background-image: url(../images/barcode.svg);
+  background-size: cover;
+  height: 23vw;
+  margin-top: -7vw;
+}
+
+.ticket-time {
+  margin-left: 1vw;
+  height: 3vw;
 }
 
 @media (max-width: 1024px) {
