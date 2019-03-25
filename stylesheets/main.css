@@ -296,10 +296,14 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: calc(100vh - 13rem);
+	/* height: calc(100vh - 13rem); */
 	position: relative;
-	justify-content: flex-start;
 	align-items: center;
+  /* padding-top: 3vw;
+  padding-bottom: 3vw; */
+  overflow: hidden;
+	height: 100vh;
+	justify-content: center;
 }
 
 .distort {
@@ -391,12 +395,6 @@ a:focus {
 	left: 0;
 	top: calc(100% - 0.25rem);
 	border-color: currentColor;
-}
-
-.content {
-  overflow: hidden;
-	height: 100vh;
-	justify-content: center;
 }
 
 /*  */
@@ -623,7 +621,7 @@ footer {
 
 .description {
   position: relative;
-  height: 320vh;
+  height: 310vh;
   width: 100%;
   background-color: black;
   padding-top: 10vw;
@@ -641,7 +639,6 @@ footer {
   color: black;
   margin-left: 11vw;
   padding-top: 2vw;
-  margin-bottom: 5vw;
 }
 
 /* svg {
@@ -752,6 +749,8 @@ footer {
 }
 
 .ticket {
+  position: relative;
+  z-index: 4;
   display: grid;
   justify-self: center;
   margin: 15vw auto 15vw;
@@ -768,6 +767,7 @@ footer {
   width: 58vw;
   border-bottom: 0.1vw solid #FFFFFF;
   border-right: 0.1vw solid #FFFFFF;
+  background-color: black;
 }
 
 .grid-item {
@@ -777,6 +777,7 @@ footer {
 .ticket-bottom {
   border-right: 0.1vw solid #FFFFFF;
   width: 58vw;
+  background-color: black;
 }
 
 .ticket-left {
@@ -845,6 +846,27 @@ footer {
   height: 3vw;
 }
 
+.ticket-2, .ticket-3 {
+  position: absolute;
+  width: 65vw;
+  height: 23vw;
+  border: 0.1vw solid #FFFFFF;
+}
+
+.ticket-2 {
+  margin-top: -37.1vw;
+  margin-left: 18.6vw;
+  z-index: 3;
+  background-color: black;
+}
+
+.ticket-3 {
+  margin-top: -36vw;
+  margin-left: 20vw;
+  z-index: 2;
+  background-color: black;
+}
+
 @media (max-width: 1024px) {
   .menu__link:nth-of-type(1),
   .menu__link:nth-of-type(2),
@@ -855,7 +877,20 @@ footer {
   .menu {
     font-size: 7vw;
     margin-right: 13vw;
-    margin-left: 0vw;
+    margin-left: 3vw;
+  }
+
+  .description {
+    height: 225vh;
+  }
+
+  .menu-1 {
+    height: 80vh;
+    padding-top: 20vw;
+  }
+
+  .container-about {
+    height: 80vh;
   }
 }
 
@@ -877,7 +912,7 @@ footer {
   	text-align: center;
   	font-size: 8vw;
     margin-right: 13vw;
-    margin-left: 0vw;
+    margin-left: 11vw;
   }
 
   .menu__link {
@@ -888,6 +923,19 @@ footer {
   .menu__link:nth-of-type(2),
   .menu__link:nth-of-type(3) {
     padding-bottom: 15vw;
+  }
+
+  .menu-1 {
+    height: 70vh;
+    padding-top: 30vw;
+  }
+
+  .description {
+    height: 170vh;
+  }
+
+  .container-about {
+    height: 60vh;
   }
 
   footer {
