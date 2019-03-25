@@ -32,3 +32,8 @@
   font-family: "Futura PT Light";
   src: url("../fonts/FuturaPT-Light.woff2");
 }
+
+@font-face {
+  font-family: "DIN Condensed";
+  src: url("../fonts/DIN Condensed.otf");
+}
