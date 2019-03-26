@@ -332,29 +332,8 @@ a:focus {
 	font-size: 5vw;
   margin-right: 30vw;
   margin-left: 0vw;
+  /* height: 40vw; */
 	/* margin-top: 100vh; */
-}
-
-.quote {
-	display: block;
-	width: 90%;
-	max-width: 1200px;
-	margin: 0 auto;
-	font-size: 2rem;
-	z-index: 999;
-	font-weight: normal;
-}
-
-.quote__author {
-	margin: 2rem 0 0 0;
-	display: block;
-	font-size: 1rem;
-	color: var(--color-content-secondary);
-}
-
-.quote__author::before {
-	content: '\2014';
-	margin-right: 1rem;
 }
 
 .menu__link {
@@ -373,31 +352,15 @@ a:focus {
   padding-bottom: 6vw;
 }
 
-.menu__link:hover,
-.quote__link:hover {
+.menu__link:hover {
 	color: #272222;
 	transition: 0.5s;
 }
 
-.menu__link span,
-.quote__link span {
+.menu__link span {
 	display: inline;
 
 }
-
-.quote__link::after {
-	content: '';
-	position: absolute;
-	height: 5px;
-	border-width: 1px 0;
-	border-style: solid;
-	width: 100%;
-	left: 0;
-	top: calc(100% - 0.25rem);
-	border-color: currentColor;
-}
-
-/*  */
 
 .animation-container {
   position: fixed;
@@ -485,18 +448,9 @@ a:focus {
   padding-left: 2.5vw;
 }
 
-/*  */
-
-/* .notes {
-  background-color: #faf6f1;
-} */
-
 .underline {
   position: relative;
   display: inline-block;
-  /* font-size: 24px;
-  font-weight: 400;
-  text-align: center; */
 }
 
 .underline,
@@ -534,8 +488,8 @@ a:focus {
   font-family: "DIN Condensed";
   text-transform: uppercase;
   font-size: 4.5rem;
-  height: 100vh;
-  padding-top: 6vw;
+  height: 50vw;
+  padding-top: 15vw;
 }
 
 .note-line {
@@ -621,7 +575,7 @@ a:focus {
 
 #description {
   position: relative;
-  height: 310vh;
+  /* height: 170vw; */
   width: 100%;
   background-color: black;
   padding-top: 10vw;
@@ -641,27 +595,8 @@ a:focus {
   padding-top: 10vw;
 }
 
-/* svg {
-  width: 30em;
-}
-
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear alternate infinite;
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-} */
-
 .container-about {
-  height: 90vh;
+  height: 50vw;
 }
 
 .about {
@@ -716,6 +651,7 @@ a:focus {
 .third {
   margin-top: 8vw;
   flex-direction: row;
+  padding-bottom: 10vw;
 }
 
 .first img {
@@ -745,7 +681,7 @@ a:focus {
 #tickets {
   position: relative;
   background-color: black;
-  height: 90vh;
+  height: 56vw;
   overflow: hidden;
 }
 
@@ -826,7 +762,7 @@ a:focus {
 }
 
 #tickets h2:hover {
-  color: #48F6FF;
+  color: #64FFFF;
 }
 
 .ticket p {
@@ -899,21 +835,21 @@ a:focus {
     margin-left: 3vw;
   }
 
-  #description {
+  /* #description {
     height: 195vh;
-  }
+  } */
 
   .menu-1 {
-    height: 80vh;
+    height: 56vw;
     padding-top: 20vw;
   }
 
   .container-about {
-    height: 60vh;
+    height: 45vw;
   }
 
   #tickets {
-    height: 75vh;
+    height: 50vw;
   }
 }
 
@@ -949,16 +885,16 @@ a:focus {
   }
 
   .menu-1 {
-    height: 70vh;
-    padding-top: 30vw;
+    height: 80vw;
+    padding-top: 40vw;
   }
 
-  #description {
+  /* #description {
     height: 154vh;
-  }
+  } */
 
   .container-about {
-    height: 53vh;
+    height: 50vw;
   }
 
   #contacts {
@@ -976,7 +912,7 @@ a:focus {
   }
 
   #tickets {
-    height: 60vh;
+    height: 60vw;
   }
 
   #afisha {
@@ -999,8 +935,12 @@ a:focus {
 }
 
 @media (max-width: 425px) {
+  .menu-1 {
+    height: 90vw;
+    padding-top: 10vw;
+  }
   #description {
-    height: 135vh;
+    /* height: 135vh; */
     padding-top: 14vw;
   }
 
@@ -1036,10 +976,11 @@ a:focus {
   }
 
   .content {
-    height: 80vh;
+    height: 97vw;;
   }
 
   #afisha h2 {
+    font-size: 11rem;
     margin-left: 6vw;
   }
 
@@ -1118,7 +1059,7 @@ a:focus {
   }
 
   .first p, .second p, .third  p {
-        font-size: 5rem;
+    font-size: 5rem;
   }
 
   #tickets {
