@@ -156,7 +156,7 @@ class Menu {
         // Translate the image on mousemove
         this.lastMousePos.translation.x = lerp(this.lastMousePos.translation.x, this.mousePos.x, 0.2);
         this.lastMousePos.translation.y = lerp(this.lastMousePos.translation.y, this.mousePos.y, 0.2);
-        this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/2)}px) translateY(${this.lastMousePos.translation.y-winsize.height*6.3}px)`;
+        this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/2)}px) translateY(${this.lastMousePos.translation.y-winsize.height*5.75}px)`;
 
         // Scale goes from 0 to 50 for mouseDistance values between 0 to 140
         this.lastMousePos.displacement.x = lerp(this.lastMousePos.displacement.x, this.mousePos.x, 0.1);
@@ -223,18 +223,80 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".text-1").on("click",".text-1", function (event) {
-    $(".line-1").css({
-      "margin-right": "500vw",
-      "transition": "1s"
-    })
+  $(".text-1").mouseenter(function(){
     $(".line-2").css({
-      "margin-right": "500vw",
-      "transition": "1s"
+      "transform": "translate(5vw,0)",
+      "-webkit-transform": "translate(5vw,0)",
+      "transition": "0.5s"
     })
-    $(".text-1").css({
-      "margin-right": "500vw",
-      "transition": "1s"
+    $(".line-1").css({
+      "transform": "translate(-5vw,0)",
+      "-webkit-transform": "translate(-5vw,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-1").mouseleave(function() {
+    $(".line-2").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
+    })
+    $(".line-1").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-2").mouseenter(function(){
+    $(".line-3").css({
+      "transform": "translate(-5vw,0)",
+      "-webkit-transform": "translate(-5vw,0)",
+      "transition": "0.5s"
+    })
+    $(".line-4").css({
+      "transform": "translate(5vw,0)",
+      "-webkit-transform": "translate(5vw,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-2").mouseleave(function() {
+    $(".line-3").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
+    })
+    $(".line-4").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-3").mouseenter(function(){
+    $(".line-5").css({
+      "transform": "translate(5vw,0)",
+      "-webkit-transform": "translate(5vw,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-3").mouseleave(function() {
+    $(".line-5").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-4").mouseenter(function(){
+    $(".line-7").css({
+      "transform": "translate(-5vw,0)",
+      "-webkit-transform": "translate(-5vw,0)",
+      "transition": "0.5s"
+    })
+  })
+  $(".text-4").mouseleave(function() {
+    $(".line-7").css({
+      "transform": "translate(0,0)",
+      "-webkit-transform": "translate(0,0)",
+      "transition": "0.5s"
     })
   })
 })

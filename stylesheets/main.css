@@ -302,8 +302,9 @@ a:focus {
   /* margin-top: -3vw; */
   /* padding-bottom: 3vw; */
   overflow: hidden;
-	height: 120vh;
+	height: 60vw;
 	justify-content: center;
+  padding-bottom: 2vw;
 }
 
 .distort {
@@ -835,6 +836,10 @@ a:focus {
     margin-left: 3vw;
   }
 
+  .content {
+    height: 110vw;
+  }
+
   /* #description {
     height: 195vh;
   } */
@@ -861,6 +866,10 @@ a:focus {
   main .heading span {
     width: 4.5vw;
     padding-right: 0.8vw;
+  }
+
+  .content {
+    height: 100vw;
   }
 
   .menu {
@@ -936,7 +945,7 @@ a:focus {
 
 @media (max-width: 425px) {
   .menu-1 {
-    height: 90vw;
+    height: 93vw;
     padding-top: 10vw;
   }
   #description {
@@ -968,7 +977,7 @@ a:focus {
   }
 
   .container-about {
-    height: 53vh;
+    height: 97vw;
   }
 
   .distort__img {
@@ -976,7 +985,7 @@ a:focus {
   }
 
   .content {
-    height: 97vw;;
+    height: 115vw;
   }
 
   #afisha h2 {
@@ -1063,7 +1072,7 @@ a:focus {
   }
 
   #tickets {
-    height: 35vh;
+    height: 48vw;
   }
 }
 
