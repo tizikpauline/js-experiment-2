@@ -300,3 +300,83 @@ $(document).ready(function(){
     })
   })
 })
+
+$(".menu a:nth-of-type(1)").mouseenter (function() {
+  $(".menu").css({
+    "background-image": "url(images/dido.png)",
+    "background-size": "60%",
+    "background-position": "95% 10%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".menu a:nth-of-type(1)").mouseleave (function() {
+  $(".menu").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".menu a:nth-of-type(2)").mouseenter (function() {
+  $(".menu").css({
+    "background-image": "url(images/idomeneus.png)",
+    "background-size": "60%",
+    "background-position": "96% 20%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".menu a:nth-of-type(2)").mouseleave (function() {
+  $(".menu").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".menu a:nth-of-type(3)").mouseenter (function() {
+  $(".menu").css({
+    "background-image": "url(images/ariadna.png)",
+    "background-size": "60%",
+    "background-position": "90% 70%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "1s",
+    "transition": "1s"
+  })
+})
+
+$(".menu a:nth-of-type(3)").mouseleave (function() {
+  $(".menu").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".menu a:nth-of-type(4)").mouseenter (function() {
+  $(".menu").css({
+    "background-image": "url(images/orpheus.png)",
+    "background-size": "60%",
+    "background-position": "95% 100%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".menu a:nth-of-type(4)").mouseleave (function() {
+  $(".menu").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
