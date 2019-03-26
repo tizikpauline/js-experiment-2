@@ -156,7 +156,7 @@ class Menu {
         // Translate the image on mousemove
         this.lastMousePos.translation.x = lerp(this.lastMousePos.translation.x, this.mousePos.x, 0.2);
         this.lastMousePos.translation.y = lerp(this.lastMousePos.translation.y, this.mousePos.y, 0.2);
-        this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/2)}px) translateY(${this.lastMousePos.translation.y-winsize.height*6.1}px)`;
+        this.DOM.svg.style.transform = `translateX(${(this.lastMousePos.translation.x-winsize.width/2)}px) translateY(${this.lastMousePos.translation.y-winsize.height*6.3}px)`;
 
         // Scale goes from 0 to 50 for mouseDistance values between 0 to 140
         this.lastMousePos.displacement.x = lerp(this.lastMousePos.displacement.x, this.mousePos.x, 0.1);
@@ -213,29 +213,28 @@ $(document).ready(function(){
   $it = setInterval(value, $timer)
 })
 
-// $(".menu__link").mouseenter (function() {
-//   $("menu__link").css({
-//     "color": "black",
-//     "transition": "0.4s"
-//   })
-//   $(".afisha").css({
-//     "background-image": "url(images/dido.png)",
-//     "background-size": "40%",
-//     "background-position": "95% 3%",
-//     "background-repeat": "no-repeat",
-//     "-webkit-transition": "all" + "1s",
-//     "-moz-transition": "all" + "1s",
-//     "-o-transition": "all" + "1s",
-//     "transition": "all" + "1s"
-//   })
-//   $(".text-1 p").css({
-//     "color": "red",
-//     "transition": "0.2s"
-//   })
-//   $(".event-1 button").css({
-//     "display": "block",
-//     "float": "right",
-//     "margin-right": "79vw",
-//     "margin-top": "-3vw"
-//   })
-// })
+$(document).ready(function(){
+  $(".menu-1").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 2000);
+  });
+});
+
+$(document).ready(function(){
+  $(".text-1").on("click",".text-1", function (event) {
+    $(".line-1").css({
+      "margin-right": "500vw",
+      "transition": "1s"
+    })
+    $(".line-2").css({
+      "margin-right": "500vw",
+      "transition": "1s"
+    })
+    $(".text-1").css({
+      "margin-right": "500vw",
+      "transition": "1s"
+    })
+  })
+})

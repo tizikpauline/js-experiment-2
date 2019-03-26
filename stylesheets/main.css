@@ -299,10 +299,10 @@ a:focus {
 	/* height: calc(100vh - 13rem); */
 	position: relative;
 	align-items: center;
-  /* padding-top: 3vw;
-  padding-bottom: 3vw; */
+  /* margin-top: -3vw; */
+  /* padding-bottom: 3vw; */
   overflow: hidden;
-	height: 100vh;
+	height: 120vh;
 	justify-content: center;
 }
 
@@ -449,7 +449,7 @@ a:focus {
   }
 }
 
-footer {
+#contacts {
   height: 8vw;
   display: flex;
   flex-direction: row;
@@ -619,7 +619,7 @@ footer {
   margin-left: 0;
 }
 
-.description {
+#description {
   position: relative;
   height: 310vh;
   width: 100%;
@@ -627,18 +627,18 @@ footer {
   padding-top: 10vw;
 }
 
-.afisha {
-  height: 12vw;
+#afisha {
+  height: 18vw;
   background-color: #faf6f1;
 }
 
-.afisha h2 {
+#afisha h2 {
   font-family: "DIN Condensed";
   text-transform: uppercase;
   font-size: 8rem;
   color: black;
   margin-left: 11vw;
-  padding-top: 2vw;
+  padding-top: 10vw;
 }
 
 /* svg {
@@ -686,7 +686,7 @@ footer {
   margin-left: 11vw;
 }
 
-.description h2 {
+#description h2 {
   font-family: "DIN Condensed";
   text-transform: uppercase;
   font-size: 8rem;
@@ -742,10 +742,11 @@ footer {
   text-transform: none;
 }
 
-.tickets {
+#tickets {
   position: relative;
   background-color: black;
   height: 90vh;
+  overflow: hidden;
 }
 
 .ticket {
@@ -796,6 +797,17 @@ footer {
   flex-direction: row;
 }
 
+.ticket-time-cost {
+  height: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.ticket-price {
+  height: 3vw;
+  margin-left: 1vw;
+}
+
 .ticket h3 {
   font-family:'Russo One', sans-serif;
   text-transform: uppercase;
@@ -803,13 +815,18 @@ footer {
   margin: 2vw auto 2vw;
 }
 
-.tickets h2 {
+#tickets h2 {
   font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 0.1vw;
   text-align: center;
   margin-top: 3vw;
+  color: white;
+}
+
+#tickets h2:hover {
+  color: #48F6FF;
 }
 
 .ticket p {
@@ -825,7 +842,7 @@ footer {
   margin-left: 1vw;
 }
 
-.ticket-adress p, .ticket-metro p, .ticket-time p {
+.ticket-adress p, .ticket-metro p, .ticket-time p, .ticket-price p{
   margin-top: 0.5vw;
 }
 
@@ -843,7 +860,9 @@ footer {
 
 .ticket-time {
   margin-left: 1vw;
-  height: 3vw;
+  height: 2.8vw;
+  border-right: 0.1vw solid #FFFFFF;
+  width:29vw;
 }
 
 .ticket-2, .ticket-3 {
@@ -880,8 +899,8 @@ footer {
     margin-left: 3vw;
   }
 
-  .description {
-    height: 225vh;
+  #description {
+    height: 195vh;
   }
 
   .menu-1 {
@@ -890,7 +909,11 @@ footer {
   }
 
   .container-about {
-    height: 80vh;
+    height: 60vh;
+  }
+
+  #tickets {
+    height: 75vh;
   }
 }
 
@@ -930,15 +953,15 @@ footer {
     padding-top: 30vw;
   }
 
-  .description {
-    height: 170vh;
+  #description {
+    height: 154vh;
   }
 
   .container-about {
-    height: 60vh;
+    height: 53vh;
   }
 
-  footer {
+  #contacts {
     align-items: center;
     height: 10vw;
     font-size: 3vw;
@@ -951,9 +974,63 @@ footer {
   .adress {
     width: 60vw;
   }
+
+  #tickets {
+    height: 60vh;
+  }
+
+  #afisha {
+    height: 25vw;
+  }
+
+  #description h2 {
+    font-size: 9rem;
+  }
+
+  #afisha h2 {
+    font-size: 9rem;
+    margin-left: 11vw;
+    padding-top: 15vw;
+  }
+
+  .about p {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 425px) {
+  #description {
+    height: 135vh;
+    padding-top: 14vw;
+  }
+
+  #description h2 {
+    font-size: 11rem;
+    margin-left: 6vw;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about p {
+    font-size: 4rem;
+    margin-left: 6vw;
+    width: 80vw;
+    margin-bottom: 6vw;
+  }
+
+  .about img {
+    margin-left: 6vw;
+    width: 80vw;
+  }
+
+  .container-about {
+    height: 53vh;
+  }
+
   .distort__img {
     width: 90%;
   }
@@ -962,9 +1039,14 @@ footer {
     height: 80vh;
   }
 
+  #afisha h2 {
+    margin-left: 6vw;
+  }
+
   .menu {
     font-size: 9.5vw;
     margin-right: 2vw;
+    margin-left: 6vw;
   }
 
   .menu__link:nth-of-type(1),
@@ -977,7 +1059,7 @@ footer {
     width: 60vw;
   }
 
-  footer {
+  #contacts {
     align-items: center;
     font-size: 4vw;
     height: 18vw;
@@ -987,6 +1069,61 @@ footer {
   .social-icons img {
     height: 7.5vw;
   }
+
+  .line-2, .line-4, .line-7 {
+    display: none;
+  }
+
+  .line-3, .line-5, .line-6, .line-8 {
+    margin-left: 0;
+  }
+
+  .menu-1 hr {
+    height: 2vw;
+  }
+
+  .menu-1 {
+    font-size: 15rem;
+    height: 89vh;
+    padding-top: 21vw;
+  }
+
+  .text-1, .text-2, .text-3, .text-4 {
+    margin-left: 2vw;
+    padding-top: 2vw;
+  }
+
+  .first img {
+    width: 55%;
+    height: 55%;
+    margin-right: 7vw;
+  }
+
+  .second img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .third img {
+    width: 55%;
+    height: 55%;
+  }
+
+  .first, .second, .third {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5vw;
+    margin-left: 6vw;
+  }
+
+  .first p, .second p, .third  p {
+        font-size: 5rem;
+  }
+
+  #tickets {
+    height: 35vh;
+  }
 }
 
 @media (max-width: 320px) {
@@ -994,7 +1131,7 @@ footer {
     width: 90%;
   }
 
-  footer {
+  #contacts {
     align-items: center;
     height: 20vw;
     font-size: 4vw;
